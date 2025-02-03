@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cdcacaa1;
+    overflow-x: hidden;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #e38e1e;
+    height: 80px;
+    font-size: 18px;
+}
+
+.logo {
+    margin: 0 1% 0 3%;
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e38e1e;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    background-color: #d8a35d;
+    border-radius: 50%;
+}
+
+.nav-left ul li a {
+    color: white;
+}
+
+.nav-left ul li a:hover {
+    border-radius: 25px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 5px 0;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    border-right: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 0 25px 25px 0;
+    border-left: none;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button i {
+    color: #333;
+}
+
+.toggle-button {
+    display: flex;
+    align-self: flex-end;
+    margin: 1% 7% 0 0;
+}
+
+#toggleTemp {
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    background-color: #e38e1e;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.weather-description, .chart-container {
+    margin: 10px;
+    width: 45%;
+}
+
+.chart-container {
+    max-width: 100%;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+.weather-location {
+    color: #f7f1e3;
+    padding: 3%;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.weather-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f7f1e3;
+    padding: 3%;
+}
+
+.weather-footer-sun p {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+.weather-footer-temp {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.weather-condition {
+    display: flex;
+    align-items: center;
+    color: #f7f1e3;
+    padding: 3%;
+}
+
+#weatherIcon {
+    margin-left: 15px;
+    font-size: 3em;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav ul, .nav-right {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-description, .chart-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container input[type="text"] {
+        width: 70%;
+    }
+
+    .search-container button {
+        width: 30%;
+    }
+
+    #toggleTemp {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        height: 15%;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .weather-description, .chart-container {
+        width: 100%;
+    }
+
+    .search-container input[type="text"] {
+        width: 40%;
+    }
+
+    .search-container button {
+        width: 40%;
+    }
+
+    .toggle-button {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    #toggleTemp {
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+    }
+}

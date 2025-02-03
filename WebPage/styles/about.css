@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cdcacaa1;
+    overflow-x: hidden;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #e38e1e;
+    height: 80px;
+    font-size: 18px;
+}
+
+.logo {
+    margin: 0 1% 0 3%;
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e38e1e;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    background-color: #d8a35d;
+    border-radius: 50%;
+}
+
+.nav-left ul li a {
+    color: white;
+}
+
+.nav-left ul li a:hover {
+    border-radius: 25px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px 20px; 
+    gap: 20px;
+}
+
+.member {
+    background-color: #999797a1;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+}
+
+.member h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.member p {
+    margin: 0;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    nav ul, .nav-right {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team {
+        margin: 20px 10px; 
+    }
+
+    .member {
+        width: 90%;
+    }
+}

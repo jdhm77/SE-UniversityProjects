@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="geoLocation.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <img src="images/logo.jpg" alt="logo" class="logo">
+        <h1>WeatherApp</h1>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+        <div class="nav-right search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchCityButton">Search City</button>
+        </div>
+    </nav>
+    <div id="location"></div>
+    <div class="content">
+        <div class="toggle-button">
+            <button id="toggleTemp">°F</button>
+        </div>
+        <div class="main-content">
+            <div class="weather-description">
+                <div id="currentWeather"></div>
+                <div id="weatherIcon"></div>
+            </div>
+            <div class="chart-container">
+                <canvas id="hourlyWeatherChart" width="400" height="200"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="dailyWeatherChart" width="400" height="260"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
