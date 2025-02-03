@@ -182,8 +182,8 @@ async function fetchWeatherData(latitude, longitude) {
 }
 
 async function fetchCityName(latitude, longitude) {
-    const apiKey = '41c12a26a8674b34ac7e7ab583cd2ffc'; 
-    const apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
+    const apiKey = 'API KEY GOES HERE'; 
+    const apiUrl = `url`;
 
     try {
         const response = await fetch(apiUrl);
