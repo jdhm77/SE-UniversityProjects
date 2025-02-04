@@ -1,6 +1,6 @@
 # Weather App & Responsive Landing Page Project
 
-This project is the final exam for the **Frontend Programming** and **IT Agile Development** courses at the University of Europe (Summer Semester 2024). It includes the development of a weather app using **Flutter** and a responsive landing page with modern web technologies.
+This project is the final exam for the **Frontend Programming** and **IT Agile Development** courses. It includes the development of a weather app using **Flutter** and a responsive landing web page.
 
 ## Features
 
